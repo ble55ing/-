@@ -88,10 +88,12 @@ def choose():
     for where1 in WhereCanGo:
         i+=1
         whonum=0
+        all=0
         for who1 in WhoCanGo:
             whonum+=1
             all+=who1.score[i]
         avg.append(all/whonum)
+
         rdm.append((i,r.randint(900,1000)*all/whonum))
     rdm = sorted(rdm, key=TakeSecond,reverse=True)#从大到小
     for tuple1 in rdm:

@@ -9,7 +9,7 @@ __author__ = 'blessing'
 #总的数据加载
 WhereCanGo=[] #能去哪里
 WhoCanGo = [] #谁能去
-
+randrange =10
 x = {'name':'blessing','score':[1,2,3]}
 class where:
     sub = ""
@@ -97,15 +97,18 @@ def choose(WhereToGo,WhoToGo):
             all+=who1.score[i]
         avg.append(all/whonum)
 
-        rdm.append((i,r.randint(900,1000)*all/whonum))
+        rdm.append((i,r.randint(1000-randrange*10,1000)*all/whonum))
     rdm = sorted(rdm, key=TakeSecond,reverse=True)#从大到小
     for tuple1 in rdm:
         print(WhereToGo[tuple1[0]].sub,WhereToGo[tuple1[0]].dst,tuple1[1])
 
 def menu():
+    global randrange
     newWho = []
     newWhere = []
     dis = ""
+    print("随机程度百分比：")
+    randrange = int(input(),10)
     print("都谁去啊:")
     print("输入序号，空格分开:")
     for i in range(0,len(WhoCanGo)):

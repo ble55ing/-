@@ -1,2 +1,2 @@
-{"name": "blessing", "score": [1, 2, 3, 0]}
-{"name": "blessing2", "score": [4, 5, 6, 0]}
+{"name": "blessing", "dislike": "粥", "score": [1, 2, 3, 0]}
+{"name": "blessing2", "dislike": "", "score": [4, 5, 6, 0]}

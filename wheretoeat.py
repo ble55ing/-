@@ -105,6 +105,8 @@ def main():
     #init()
     load()
     choose()
+    savewho()
+
 
 
 

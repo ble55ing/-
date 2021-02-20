@@ -10,6 +10,9 @@ v20 = _afl_prev_loc ^ a2;
 _afl_prev_loc ^= v20;
 _afl_prev_loc = (unsigned __int64)_afl_prev_loc >> 1;
 
+void aaa()
+{
+
 
 if (strncmp(GIF_STAMP, Buf, GIF_VERSION_POS) != 0) {
     if (Error != NULL)
@@ -98,6 +101,7 @@ GifFileOut->SColorMap = GifMakeMapObject(
     GifFileIn->SColorMap->ColorCount,
     GifFileIn->SColorMap->Colors);
     
+}
 
 void
 stackswap()

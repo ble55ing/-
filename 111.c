@@ -82,9 +82,9 @@ void parseconf_load_setting(const char *setting){
 }
 
 // Skip the component keyword
-	if ((id = jas_tvparser_next(tvp))) {
-		// This should never happen.
-		abort();
+if ((id = jas_tvparser_next(tvp))) {
+    // This should never happen.
+    abort();
 }
 
 jas_taginfo_t *taginfo;
